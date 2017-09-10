@@ -25,7 +25,6 @@ end
 
 mysql_connection_info = {
   host: '0.0.0.0',
-  port: '3306',
   username: 'root',
   password: passwords['root_password']
 }
@@ -42,6 +41,5 @@ mysql_database_user node['lamp']['database']['admin_username'] do
   password passwords['admin_password']
   database_name node['lamp']['database']['dbname']
   host '0.0.0.0'
-  port '3306'
   action [:create, :grant]
 end
