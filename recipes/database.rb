@@ -25,7 +25,7 @@ end
 
 mysql_connection_info = {
   host: '0.0.0.0',
-  port '3306',
+  port: '3306',
   username: 'root',
   password: passwords['root_password']
 }
